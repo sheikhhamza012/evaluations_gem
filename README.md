@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'evaluations_gem'
+gem 'evaluations_gem', git: 'https://github.com/sheikhhamza012/evaluations_gem/'
 ```
 
 And then execute:
@@ -18,7 +18,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install evaluations_gem
+    $ git clone https://github.com/sheikhhamza012/evaluations_gem/
+    $ cd evaluations_gem
+    $ rake build
+    $ gem install pkg/evaluations_gem-0.1.0.gem 
+    
+
+
+    
 
 ## Usage
 
