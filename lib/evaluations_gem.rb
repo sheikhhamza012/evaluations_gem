@@ -95,7 +95,6 @@ module EvaluationsGem
               
           end
           output.write("output_manager.xlsx")
-          output
       end
 
       #2nd part 
