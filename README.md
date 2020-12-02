@@ -29,7 +29,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+- peers : `EvaluationsGem::Evaluations.peer_to_peer(file)`
+- manager : `EvaluationsGem::Evaluations.manager_to_collaborator(file)`
 
 ## Development
 
