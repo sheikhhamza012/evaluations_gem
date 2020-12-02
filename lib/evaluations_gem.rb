@@ -78,9 +78,9 @@ module EvaluationsGem
           input = RubyXL::Parser.parse(file_path)
           output = duplicate(input[0])
           if validate_records( output[0])
-              output.write("evaluators_error.xlsx")
+            return output.write("evaluators_error.xlsx")
 
-              return
+              
           end
           output = RubyXL::Workbook.new
           managers = get_uniq_managers(input[0])
@@ -104,9 +104,9 @@ module EvaluationsGem
           input = RubyXL::Parser.parse(file_path)
           output = duplicate(input[0])
           if validate_records( output[0])
-              output.write("evaluators_error.xlsx")
+            return output.write("evaluators_error.xlsx")
 
-              return
+              
           end
           input[0].each_with_index do |row, i|
               next if i==0
