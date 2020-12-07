@@ -78,7 +78,8 @@ module EvaluationsGem
           input = RubyXL::Parser.parse(file_path)
           output = duplicate(input[0])
           if validate_records( output[0])
-            return output.write("evaluators_error.xlsx")
+            # return output.write("evaluators_error.xlsx")
+            return output
 
               
           end
@@ -95,6 +96,7 @@ module EvaluationsGem
               
           end
           output.write("output_manager.xlsx")
+          return output
       end
 
       #2nd part 
@@ -103,7 +105,8 @@ module EvaluationsGem
           input = RubyXL::Parser.parse(file_path)
           output = duplicate(input[0])
           if validate_records( output[0])
-            return output.write("evaluators_error.xlsx")
+            # return output.write("evaluators_error.xlsx")
+            return output
 
               
           end
@@ -116,7 +119,8 @@ module EvaluationsGem
                   output[0].add_cell(i,k+2,c)
               end
           end
-          output.write("output_peers.xlsx")
+        #   output.write("output_peers.xlsx")
+          return output
       end
   end
 end
